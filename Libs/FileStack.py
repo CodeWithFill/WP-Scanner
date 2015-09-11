@@ -115,7 +115,7 @@ class FileStack:
 
 
     # rename directory
-    def renameDir(self, dir, dirNewName):
+    def renameDir(self, dirpath, dirNewName):
         if os.path.isdir(dirpath) == True:
             currentDir = Path(dirpath)
             currentDir.rename(dirNewName)
